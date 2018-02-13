@@ -1,4 +1,4 @@
-function countAllStars(galaxies) {
+export function countAllStars(galaxies) {
     var totalStars = 0;
     galaxies.forEach(function (stars) {
         totalStars = stars; // fix me
