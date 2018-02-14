@@ -8,14 +8,11 @@ The design emerged in a project that uses a shared information object across mul
 
 The pattern is used in the project like this:
 
-- When a new state is entered, the necessary shared information is retrieved and stored in instance variables.
+- When a new state is entered, the necessary shared information is retrieved and stored in instance variables. The instance variables can be changed.
 - Trying to retrieve the information from the shared object a second time triggers an access error.
 - Not setting the shared information at the end of a state triggers an error in the next access.
 
-This enforces that if a state reads some of the shared information, it must also write back the updated information.
-
-// TODO expand?
-This design controls the ownership of an object, it is similar to C++11's `std::unique_ptr`.
+As this design controls the ownership of an object, it is similar to C++11's `std::unique_ptr`. It also enforces that when a state reads some of the shared information, it must also write back the updated information.
 
 ## When to use it?
 
