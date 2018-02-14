@@ -16,9 +16,9 @@ As this design controls the ownership of an object, it is similar to C++11's `st
 
 ## When to use it?
 
-When you must guarantee that a resource:
-- must only be accessed once by an instance
-- must be updated by the instance that accessed it
+When you **must** guarantee that a resource:
+- is only be accessed once by an instance
+- is updated by the instance that accessed it
 
 ## Implementation
 
