@@ -2,15 +2,9 @@
 
 ## What is it?
 
-The Single Access design pattern restricts the access to a resource, allowing only a single retrieval. Consecutive accesses can trigger an error, which would usually point to a logical error in the code.
+The Single Access design pattern restricts the access to a resource, allowing only a single retrieval. Consecutive accesses trigger an error, which usually points to a logical error in the code.
 
-## When to use it?
-
-- When you must guarantee that a resource will only be accessed once.
-
-## Why?
-
-The design emerged in a project, that has a state object being shared across multiple states. It provides a way to ensure that the shared data is only being accessed _only_ once in each state, and can point out logical errors where the objects is being accessed multiple times, or not being set properly.
+The design emerged in a project that uses a shared information object across multiple states. It provides a way to ensure that the shared data is being accessed _only_ once in each state, and being updated at the end. This has helped point out logical errors where the object is being accessed multiple times, or not being set properly, within a state.
 
 The pattern is used in the project like this:
 
@@ -19,6 +13,15 @@ The pattern is used in the project like this:
 - Not setting the shared information at the end of a state triggers an error in the next access.
 
 This enforces that if a state reads some of the shared information, it must also write back the updated information.
+
+// TODO expand?
+This design controls the ownership of an object, it is similar to C++11's `std::unique_ptr`.
+
+## When to use it?
+
+When you must guarantee that a resource:
+- must only be accessed once by an instance
+- must be updated by the instance that accessed it
 
 ## Implementation
 
