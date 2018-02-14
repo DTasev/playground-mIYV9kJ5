@@ -7,7 +7,6 @@
 - Class Interface
     - Example usage with tests
     - Coding exercise
-        - Hints:
     - Final implementation
 - Feedback
 
