@@ -29,7 +29,7 @@ When you **must** guarantee that a resource:
 - is only be accessed once by an instance
 - is updated by the instance that accessed it
 
-## Implementation
+## Class Interface
 
 @[Interface]({ "stubs": ["iSingleAccess.ts"]})
 
@@ -41,7 +41,7 @@ The following file contains some test cases, versus which your implementation wi
 
 @[Single Access Tests]({ "stubs": ["wip/singleAccess.test.ts"]})
 
-### Implementation
+### Coding exercise
 
 @[Implementation]({ "stubs": ["wip/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register wip/singleAccess.test.ts --reporter list" })
 
