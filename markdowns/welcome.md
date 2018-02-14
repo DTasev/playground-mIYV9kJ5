@@ -1,17 +1,13 @@
 # Single Access Design Pattern
 
-<!-- TOC -->
-
-- [Single Access Design Pattern](#single-access-design-pattern)
-    - [What is it?](#what-is-it)
-    - [When to use it?](#when-to-use-it)
-    - [Implementation](#implementation)
-        - [Example usage with tests](#example-usage-with-tests)
-        - [Implementation](#implementation-1)
-        - [Final implementation](#final-implementation)
-    - [Feedback](#feedback)
-
-<!-- /TOC -->
+## Table of Contents
+- What is it?
+- When to use it?
+- Implementation
+    - Example usage with tests
+- Implementation
+- Final implementation
+- Feedback
 
 ## What is it?
 
@@ -50,7 +46,30 @@ The following file contains some test cases, versus which your implementation wi
 @[Implementation]({ "stubs": ["wip/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register wip/singleAccess.test.ts --reporter list" })
 
 This is an opportunity to have a go at implementing the design pattern. This will help you understand it better, so I definitely recommend spending some time here.
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ### Final implementation
 @[Implementation]({ "stubs": ["final/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register final/singleAccess.test.ts --reporter list" })
 
