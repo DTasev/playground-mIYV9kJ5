@@ -1,5 +1,18 @@
 # Single Access Design Pattern
 
+<!-- TOC -->
+
+- [Single Access Design Pattern](#single-access-design-pattern)
+    - [What is it?](#what-is-it)
+    - [When to use it?](#when-to-use-it)
+    - [Implementation](#implementation)
+        - [Example usage with tests](#example-usage-with-tests)
+        - [Implementation](#implementation-1)
+        - [Final implementation](#final-implementation)
+    - [Feedback](#feedback)
+
+<!-- /TOC -->
+
 ## What is it?
 
 The Single Access design pattern restricts the access to a resource, allowing only a single retrieval. Consecutive accesses trigger an error, which usually points to a logical error in the code.
@@ -40,3 +53,6 @@ This is an opportunity to have a go at implementing the design pattern. This wil
 
 ### Final implementation
 @[Implementation]({ "stubs": ["final/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register final/singleAccess.test.ts --reporter list" })
+
+## Feedback
+For feedback or comments, please [create an issue](https://github.com/DTasev/playground-mIYV9kJ5/issues/new) or drop me an email [dimtasev@gmail.com](mailto:dimtasev@gmail.com?Subject=Single%20Access%20Playground%20Feedback)
