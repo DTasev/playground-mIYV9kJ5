@@ -45,7 +45,11 @@ The following file contains some test cases, versus which your implementation wi
 
 @[Implementation]({ "stubs": ["wip/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register wip/singleAccess.test.ts --reporter list" })
 
-This is an opportunity to have a go at implementing the design pattern. This will help you understand it better, so I definitely recommend spending some time here. If you want some guidance for where to start, scoll a bit down, and if you want the final code, just scroll to the end of the page.
+This is an opportunity to have a go at implementing the design pattern. This will help you understand it better, so I definitely recommend giving it a go.
+
+If you want some guidance for where to start, scroll further down. 
+
+If you want the final code, go to the end of the page.
 <br>
 <br>
 <br>
