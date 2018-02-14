@@ -20,7 +20,7 @@ describe('Single Access Design Pattern', () => {
 
         singleAccess.set(myClass);
 
-        expect(singleAccess.available());
+        expect(singleAccess.available()).to.be.true;
     });
     it('should allow getting a resource once', () => {
         const singleAccess = new SingleAccess<MyClass>();
@@ -30,7 +30,7 @@ describe('Single Access Design Pattern', () => {
 
         const result = singleAccess.get();
         expect(singleAccess.available()).to.be.false;
-        expect(result === myClass);
+        expect(result === myClass).to.be.true;
     });
     it('should NOT allow getting a resource more than once', () => {
         const singleAccess = new SingleAccess<MyClass>();
@@ -41,12 +41,12 @@ describe('Single Access Design Pattern', () => {
         const result = singleAccess.get();
 
         expect(singleAccess.available()).to.be.false;
-        expect(result === myClass);
+        expect(result === myClass).to.be.true;
 
         try {
             const fail = singleAccess.get();
             // this should throw an error, if it doesn't then the test must fail, as a second access was allowed
-            expect(false);
+            expect(false).to.be.true;
         } catch (error) {
             expect(error != null);
             expect(singleAccess.available()).to.be.false;
