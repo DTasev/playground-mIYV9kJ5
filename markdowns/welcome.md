@@ -1,13 +1,16 @@
 # Single Access Design Pattern
 
 ## Table of Contents
+- Table of Contents
 - What is it?
 - When to use it?
-- Implementation
+- Class Interface
     - Example usage with tests
-- Implementation
-- Final implementation
+    - Coding exercise
+        - Hints:
+    - Final implementation
 - Feedback
+
 
 ## What is it?
 
