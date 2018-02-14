@@ -35,9 +35,9 @@ This is what an interface for the single access implementation looks like. The `
 
 ### Implementation
 
-@[Implementation]({ "stubs": ["singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.spec.ts --reporter list" })
+@[Implementation]({ "stubs": ["singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.test.ts --reporter list" })
 
 This is an opportunity to have a go at implementing the design pattern. This will help you understand it better, so I definitely recommend spending some time here.
 
 ### Final implementation
-@[Implementation]({ "stubs": ["fSingleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.spec.ts --reporter list" })
+@[Implementation]({ "stubs": ["fSingleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.test.ts --reporter list" })
