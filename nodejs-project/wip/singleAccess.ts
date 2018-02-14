@@ -1,4 +1,4 @@
-class SingleAccess<T> implements ISingleAccess<T> {
+export class SingleAccess<T> implements ISingleAccess<T> {
     // you can add variables too
     //
 

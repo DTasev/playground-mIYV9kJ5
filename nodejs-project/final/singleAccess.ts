@@ -1,4 +1,4 @@
-class fSingleAccess<T> {
+export class SingleAccess<T> implements ISingleAccess<T> {
     private resource: T = null;
     private accessed: boolean = false;
 

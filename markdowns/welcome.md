@@ -26,15 +26,17 @@ When you must guarantee that a resource:
 
 This is what an interface for the single access implementation looks like. The `<T>` is a generics notation, that allows specifying to TypeScript what the actual object's type is, and also points out that this will work for _any_ object. If you're not familiar with generics, have a look [at the TypeScript's Generics documentation](https://www.typescriptlang.org/docs/handbook/generics.html).
 
-### Usage
+### Example usage with tests
 
-@[Usage]({ "stubs": ["singleAccess.test.ts"]})
+The following file contains some test cases, versus which your implementation will be tested (if you attempt it!). Test cases are a good way of showing off different use cases, while keeping it easy to follow.
+
+@[Single Access Tests]({ "stubs": ["wip/singleAccess.test.ts"]})
 
 ### Implementation
 
-@[Implementation]({ "stubs": ["singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.test.ts --reporter list" })
+@[Implementation]({ "stubs": ["wip/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register wip/singleAccess.test.ts --reporter list" })
 
 This is an opportunity to have a go at implementing the design pattern. This will help you understand it better, so I definitely recommend spending some time here.
 
 ### Final implementation
-@[Implementation]({ "stubs": ["fSingleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register singleAccess.test.ts --reporter list" })
+@[Implementation]({ "stubs": ["final/singleAccess.ts"], "command": "node_modules/mocha/bin/mocha --require ts-node/register final/singleAccess.test.ts --reporter list" })
