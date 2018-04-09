@@ -23,7 +23,7 @@ The pattern is used in the project like this:
 - Trying to retrieve the information from the shared object a second time triggers an access error.
 - Not setting the shared information at the end of a state triggers an error in the next access.
 
-As this design controls the ownership of an object, it is similar to C++11's `std::unique_ptr`. It also enforces that when a state reads some of the shared information, it must also write back the updated information.
+As this design controls the ownership of an object, it is similar to C++11's `std::unique_ptr`.
 
 ## When to use it?
 
