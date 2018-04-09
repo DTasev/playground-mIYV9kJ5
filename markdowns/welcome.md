@@ -28,8 +28,8 @@ As this design controls the ownership of an object, it is similar to C++11's `st
 ## When to use it?
 
 When you **must** guarantee that a resource:
-- is only be accessed once by an instance
-- is updated by the instance that accessed it
+- is only accessed once
+- is updated by the object that accessed it
 
 ## Class Interface
 
