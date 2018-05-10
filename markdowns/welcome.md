@@ -1,4 +1,4 @@
-# Single Access Design Pattern
+# Single Access Design Pattern - TypeScript demo
 
 ## Table of Contents
 - Table of Contents
